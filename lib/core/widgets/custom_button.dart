@@ -25,7 +25,7 @@ class CustomButton extends StatelessWidget {
       ),
       child: MaterialButton(
         //color: bgColor,
-        onPressed: () {},
+        onPressed: onpressed,
         child: Text(btnText, style: TextStyle(color: txtColor)),
       ),
     );

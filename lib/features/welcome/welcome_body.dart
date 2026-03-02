@@ -1,7 +1,10 @@
 import 'package:bookia/core/global/app_text_styles.dart';
 import 'package:bookia/core/global/theme/app_colors.dart';
+import 'package:bookia/core/utils/navigation.dart';
 import 'package:bookia/core/widgets/custom_button.dart';
 import 'package:bookia/core/widgets/logo.dart';
+import 'package:bookia/features/login/login_view.dart';
+import 'package:bookia/features/rgister/register_view.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeBody extends StatelessWidget {
@@ -41,7 +44,9 @@ class WelcomeBody extends StatelessWidget {
               bgColor: AppColors.primaryColor,
               btnText: "Login",
               txtColor: AppColors.backGroundColor,
-              onpressed: () {},
+              onpressed: () {
+                pushTo(context, LoginView());
+              },
             ),
           ),
           Positioned(
@@ -51,7 +56,7 @@ class WelcomeBody extends StatelessWidget {
               bgColor: AppColors.backGroundColor,
               btnText: "Register",
               txtColor: AppColors.darkGrey,
-              onpressed: () {},
+              onpressed: () {pushTo(context, RegisterView());},
             ),
           ),
         ],

@@ -30,4 +30,11 @@ class AppTextStyles {
     height: 1,
   );
 
+  static const TextStyle heading = TextStyle(
+    fontFamily: AppFonts.serifDisplay,
+    color: AppColors.darkBlack,
+    fontSize: 30,
+    fontWeight: FontWeight.w400,
+    height: 1.3,
+  );
 }

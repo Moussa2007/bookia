@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
-void pushReplacement(BuildContext context, Widget newScreen){
-  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> newScreen));
+void pushReplacement(BuildContext context, Widget newScreen) {
+  Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => newScreen),
+  );
 }
 
-void pushTo(BuildContext context, Widget newScreen){
-  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> newScreen));
+void pushTo(BuildContext context, Widget newScreen) {
+  Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => newScreen),
+  );
 }
 
-void pop(BuildContext context){
+void pop(BuildContext context) {
   Navigator.pop(context);
 }
